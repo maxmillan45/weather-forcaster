@@ -9,6 +9,12 @@ async function getWeather(){
         }
         const data = await response.json();
         document.getElementById("weather").innerHTML = `
-        
+            <h2>${data.name}</h2>
+            <p>Temperature: ${data.main.temp} °C</p>
+            <p>Weather: ${data.weather[0].description}</p>
+        `;
+    } catch (error) {
+        document.getElementById("weather").innerHTML = `<p>${error.message}</p>`;
+    }   
    
 }
