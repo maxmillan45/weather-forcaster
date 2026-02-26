@@ -1,4 +1,4 @@
-# Weather App 🌤️
+# Weather App 
 
 A real-time, city-searchable weather application built with **HTML, CSS, and JavaScript**, using the **Open-Meteo API** for geolocation and weather data.  
 
